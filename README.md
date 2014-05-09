@@ -15,8 +15,7 @@ Once all the data is parsed, call `end()` and then you can get at the field, row
 * `fieldCount( row );`: get total number of fields for a given row (zero indexed)
 * `field( row, field );`: get field data for given row and field index (zero indexed)
 
-Example:
-
+####Example
 ``` js
 var data = "test1\t\"test 2\nsecond row in cell\"\t\"test 3, oh oh \"\"aha\"\"\"\t8328\t\"\"\"test4 multiples\"\"\"\ntest1b\t\"test 2b\nsecond row in cell\"\t\"test 3b, oh oh \"\"aha\"\"\"\t99\t\"\"\"test4b multiples\"\"\"\ntest1c\t\"test 2c\nsecond row in cell\"\t\"test 3c, oh oh \"\"aha\"\"\"\t14\t\"test4c multiples\"";
 
