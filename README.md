@@ -3,19 +3,19 @@ FieldReader
 
 This simple JavaScript object was created to parse the awkward file data saved from an Excel spreadsheet saved in CSV or TSV format, into rows and fields.
 
-###Usage
+### Usage
 Just create a new `FieldReader` object passing a field and line delimiter character, then throw characters at it.
 
 Once all the data is parsed, call `end()` and then you can get at the field, row information.
 
-####Methods
+#### Methods
 * `gotChar( character );`: each character from the file is passed in using this method
 * `end();`: when all data is passed in, call 'end'
 * `rowCount();`: get total number of rows retrieved
 * `fieldCount( row );`: get total number of fields for a given row (zero indexed)
 * `field( row, field );`: get field data for given row and field index (zero indexed)
 
-####Example
+#### Example
 ``` js
 var data = "test1\t\"test 2\nsecond row in cell\"\t\"test 3, oh oh \"\"aha\"\"\"\t8328\t\"\"\"test4 multiples\"\"\"\ntest1b\t\"test 2b\nsecond row in cell\"\t\"test 3b, oh oh \"\"aha\"\"\"\t99\t\"\"\"test4b multiples\"\"\"\ntest1c\t\"test 2c\nsecond row in cell\"\t\"test 3c, oh oh \"\"aha\"\"\"\t14\t\"test4c multiples\"";
 
